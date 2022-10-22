@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "activity": {
+      "type": "string"
+    },
+    "accessibility": {
+      "type": "number"
+    },
+    "type": {
+      "type": "string"
+    },
+    "participants": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "activity",
+    "accessibility",
+    "type",
+    "participants",
+    "price"
+  ]
+}

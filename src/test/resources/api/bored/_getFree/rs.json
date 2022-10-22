@@ -1,0 +1,10 @@
+[
+  {
+    "activity": "type:String",
+    "accessibility": "regex:(^[0]*[.,][0-9]+)|(^[1]*[.,][0]?)",
+    "type": "type:String",
+    "participants": "regex:[1-9]$",
+    "price": "0.0"
+
+  }
+]
