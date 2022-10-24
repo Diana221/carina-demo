@@ -1,0 +1,13 @@
+{
+  "id": 28,
+  "clientOrderId":"clientOrderIdSampl12",
+  "symbol": "wrxinr",
+  "price": "9293.0",
+  "origQty": "10.0",
+  "executedQty": "8.2",
+  "status": "wait",
+  "type": "limit",
+  "side": "sell",
+  "createdTime": 1499827319559,
+  "updatedTime": 1499827319559
+}

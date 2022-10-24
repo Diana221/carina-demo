@@ -1,0 +1,10 @@
+[
+  {
+    "id": "type:Integer",
+    "price": "type:String",
+    "qty": "type:String",
+    "quoteQty": "type:String",
+    "time": "type:Integer",
+    "isBuyerMaker": "type:Boolean"
+  }
+]

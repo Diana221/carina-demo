@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.qaprosoft.carina.demo.api;
+package com.qaprosoft.carina.demo.HW.wazirx;
 
 import com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2;
 import com.qaprosoft.carina.core.foundation.api.annotation.Endpoint;
@@ -25,13 +25,13 @@ import com.qaprosoft.carina.core.foundation.api.http.HttpResponseStatusType;
 import com.qaprosoft.carina.core.foundation.utils.Configuration;
 
 @Endpoint(url = "${base_url}", methodType = HttpMethodType.POST)
-@RequestTemplatePath(path = "api/users/_post/rq.json")
-@ResponseTemplatePath(path = "api/users/_post/rs.json")
-@SuccessfulHttpStatus(status = HttpResponseStatusType.CREATED_201)
-public class PostUserMethod extends AbstractApiMethodV2 {
+@RequestTemplatePath(path = "api/HW/wazirx/_post/rq.json")
+@ResponseTemplatePath(path = "api/HW/wazirx/_post/rs.json")
+@SuccessfulHttpStatus(status = HttpResponseStatusType.BAD_REQUEST_400)
+public class PostOrder extends AbstractApiMethodV2 {
 
-    public PostUserMethod() {
-        super("api/users/_post/rq.json", "api/users/_post/rs.json", "api/users/user.properties");
-        replaceUrlPlaceholder("base_url", Configuration.getEnvArg("api_url"));
+    public PostOrder() {
+        super("api/HW/wazirx/_post/rq.json", "api/HW/wazirx/_post/rs.json");
+        replaceUrlPlaceholder("base_url", Configuration.getEnvArg("api_url2"));
     }
 }
