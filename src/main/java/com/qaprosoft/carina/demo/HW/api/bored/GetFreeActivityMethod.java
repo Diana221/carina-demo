@@ -1,4 +1,4 @@
-package com.qaprosoft.carina.demo.HW.bored;
+package com.qaprosoft.carina.demo.HW.api.bored;
 
 
 import com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2;
@@ -10,12 +10,12 @@ import com.qaprosoft.carina.core.foundation.api.http.HttpResponseStatusType;
 import com.qaprosoft.carina.core.foundation.utils.Configuration;
 
 @Endpoint(url = "${base_url}", methodType = HttpMethodType.GET)
-@ResponseTemplatePath(path = "api/HW/bored/_get/rs.json")
+@ResponseTemplatePath(path = "api/HW/bored/_getFree/rs.json")
 @SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
-public class GetActivity extends AbstractApiMethodV2 {
+public class GetFreeActivityMethod extends AbstractApiMethodV2 {
 
-    public GetActivity() {
-        replaceUrlPlaceholder("base_url", Configuration.getEnvArg("api_url"));
-    }
+    public GetFreeActivityMethod(){
+        replaceUrlPlaceholder("base_url", Configuration.getEnvArg("api_url1"));
+}
 
 }

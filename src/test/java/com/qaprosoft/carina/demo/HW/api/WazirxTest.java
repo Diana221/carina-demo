@@ -1,12 +1,12 @@
-package com.qaprosoft.carina.demo.HW;
+package com.qaprosoft.carina.demo.HW.api;
 
 import com.qaprosoft.carina.core.foundation.IAbstractTest;
 import com.qaprosoft.carina.core.foundation.api.http.HttpResponseStatusType;
 import com.qaprosoft.carina.core.foundation.utils.ownership.MethodOwner;
-import com.qaprosoft.carina.demo.HW.wazirx.DeleteOrder;
-import com.qaprosoft.carina.demo.HW.wazirx.GetStatus;
-import com.qaprosoft.carina.demo.HW.wazirx.GetTrades;
-import com.qaprosoft.carina.demo.HW.wazirx.PostOrder;
+import com.qaprosoft.carina.demo.HW.api.wazirx.DeleteOrder;
+import com.qaprosoft.carina.demo.HW.api.wazirx.GetStatus;
+import com.qaprosoft.carina.demo.HW.api.wazirx.GetTrades;
+import com.qaprosoft.carina.demo.HW.api.wazirx.PostOrder;
 import org.testng.annotations.Test;
 
 public class WazirxTest implements IAbstractTest {

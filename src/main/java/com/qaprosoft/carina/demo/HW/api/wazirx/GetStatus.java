@@ -1,4 +1,4 @@
-package com.qaprosoft.carina.demo.HW.wazirx;
+package com.qaprosoft.carina.demo.HW.api.wazirx;
 
 
 import com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2;

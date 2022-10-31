@@ -50,25 +50,27 @@ public class WebSampleTest implements IAbstractTest {
     @TestLabel(name = "feature", value = {"web", "regression"})
     public void testModelSpecs() {
         // Open GSM Arena home page and verify page is opened
+
+
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
-        Assert.assertTrue(homePage.isPageOpened(), "Home page is not opened");
-        
-        //Closing advertising if it's displayed
-        homePage.getWeValuePrivacyAd().closeAdIfPresent();
-        
-        // Select phone brand
-        homePage = new HomePage(getDriver());
-        BrandModelsPage productsPage = homePage.selectBrand("Samsung");
-        // Select phone model
-        ModelInfoPage productInfoPage = productsPage.selectModel("Galaxy A52 5G");
-        // Verify phone specifications
-        SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(productInfoPage.readDisplay(), "6.5\"", "Invalid display info!");
-        softAssert.assertEquals(productInfoPage.readCamera(), "64MP", "Invalid camera info!");
-        softAssert.assertEquals(productInfoPage.readRam(), "6/8GB RAM", "Invalid ram info!");
-        softAssert.assertEquals(productInfoPage.readBattery(), "4500mAh", "Invalid battery info!");
-        softAssert.assertAll();
+//        Assert.assertTrue(homePage.isPageOpened(), "Home page is not opened");
+//
+//        //Closing advertising if it's displayed
+//        homePage.getWeValuePrivacyAd().closeAdIfPresent();
+//
+//        // Select phone brand
+//        homePage = new HomePage(getDriver());
+//        BrandModelsPage productsPage = homePage.selectBrand("Samsung");
+//        // Select phone model
+//        ModelInfoPage productInfoPage = productsPage.selectModel("Galaxy A52 5G");
+//        // Verify phone specifications
+//        SoftAssert softAssert = new SoftAssert();
+//        softAssert.assertEquals(productInfoPage.readDisplay(), "6.5\"", "Invalid display info!");
+//        softAssert.assertEquals(productInfoPage.readCamera(), "64MP", "Invalid camera info!");
+//        softAssert.assertEquals(productInfoPage.readRam(), "6/8GB RAM", "Invalid ram info!");
+//        softAssert.assertEquals(productInfoPage.readBattery(), "4500mAh", "Invalid battery info!");
+//        softAssert.assertAll();
     }
 
 
